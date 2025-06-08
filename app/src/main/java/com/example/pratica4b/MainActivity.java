@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
         }
         it.putExtra("luz", luzClassificacao);
 
-        if(proximidade < 3) {
-            proximidadeClassificacao = "naoDistante";
-        } else {
+        if(proximidade > 3) {
             proximidadeClassificacao = "distante";
+        } else {
+            proximidadeClassificacao = "naoDistante";
         }
         it.putExtra("proximidade", proximidadeClassificacao);
 
